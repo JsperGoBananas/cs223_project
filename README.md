@@ -1,4 +1,6 @@
-run docker-compose up -d to initialize environment needed to run the application    
-then run init.sql in all three databases    
-Start all three servers and choose the function you want to run in the client   
+run 
+```docker-compose up -d ```   to initialize and run environment needed to run the application    
+execute ```init.sql``` in all three databases    
+run ```python ./Server1_NorCal.py``` ```python ./Server2_NoVA.py``` ```python ./Server3_Ohio.py``` to start all servers    
 You should be good to go now!    
+Run the transaction/tests you want in the ```client.py```
