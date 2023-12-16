@@ -1,0 +1,38 @@
+version: '3.1'
+
+services:
+  node_1:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: db1
+      MYSQL_USER: user1
+      MYSQL_PASSWORD: 123456
+    ports:
+      - "3306:3306"
+
+  node_2:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: db2
+      MYSQL_USER: user2
+      MYSQL_PASSWORD: 123456
+    ports:
+      - "3307:3306"
+
+
+  node_3:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: db3
+      MYSQL_USER: user3
+      MYSQL_PASSWORD: 123456
+    ports:
+      - "3308:3306"
+
+  redis:
+    image: "redis:latest"
+    ports:
+      - "6379:6379"
